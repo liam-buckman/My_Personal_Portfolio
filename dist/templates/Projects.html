@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Buckman Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='About.css') }}">
+</head>
+<body>
+<div class = "header"></div>
+<div class = "Socials_banner" id="SocialsBanner" >
+    <a class="text" href="javascript:location.reload()">Liam Buckman | Porfolio</a>  
+    <a href="{{ url_for('static', filename='pdf/resumeport.pdf') }}" class = 'resumeButton' target="_blank">Resumé</a>
+    <a href="https://www.linkedin.com/in/liam-buckman-714791259/" class="linkedinbutton" target="_blank"></a>
+    <!-- <div class="connectButton">Connect</div> -->
+</div>
+<div class ='content-box'>
+    <figure class="text-center">
+  <blockquote class="blockquote">
+    <p>Sometimes it's the people no one imagines anything of, that do the things no one imagines.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    -Alan Turing <cite title="Source Title"></cite>
+  </figcaption>
+</figure>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <div class="buttons">
+        <a href="{{ url_for('static', filename='photos/Portfolio_page-0001.jpg') }}" class="portfolio">Portfolio</a>
+        <a href="Insert Later" class="gallery">Gallery</a>
+    </div>
+</div>
+</div>
+</div>
+    
+ <script src="{{ url_for('static', filename='js/socials.js') }}"></script> 
+</body>
+
+<footer>
+    <div class="footer-background">
+        <div class="copyright">
+            © 2025 | Liam Buckman
+          </div>
+    </div>
+   
+  </footer>
+
+
+</html>

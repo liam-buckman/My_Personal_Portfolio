@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Buckman Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+<div class = "header"></div>
+<div class = "Socials_banner" id="SocialsBanner" >
+    <a class="text" href="javascript:location.reload()">Liam Buckman | Porfolio</a>  
+    <a href="{{ url_for('static', filename='pdfs/resumeport.pdf') }}" class = 'resumeButton' target="_blank">Resumé</a>
+    <a href="https://www.linkedin.com/in/liam-buckman-714791259/" class="linkedinbutton" target="_blank"></a>
+    <!-- <div class="connectButton">Connect</div> -->
+</div>
+<div class ='content-box'>
+    <div class="welcome-title"> Welcome</div>
+    <div class="dropdown">
+      <button> Explore </button>
+      <div class="contents">
+        <a href="Projects">Portfolio</a>
+        <a href="About-me">About Me</a>
+      </div>
+    </div>
+   <!-- <a href="projects.html" class="tab">Projects</a>
+    <a href="experience.html" class="tab">Experience</a>
+    <a href="about.html" class="tab">About Me</a> -->
+    <div class="picture"></div> 
+</div>
+    
+ <script src="{{ url_for('static', filename='js/socials.js') }}"></script> 
+</body>
+
+<footer>
+    <div class="footer-background">
+        <div class="copyright">
+            © 2025 | Liam Buckman
+          </div>
+    </div>
+   
+  </footer>
+
+
+</html>
