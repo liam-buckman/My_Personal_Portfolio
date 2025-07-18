@@ -19,6 +19,11 @@ def experience():
 @app.route('/Projects')
 def projects():
     return render_template('Projects.html')
+
+@app.route('/Gallery')
+def gallery():
+    return render_template('gallery.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
