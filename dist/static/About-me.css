@@ -376,3 +376,29 @@ html{
   padding-left: 3.5vw;
   text-align: center;
 }
+
+.coming-soon{
+   width: 65vw;
+  height: 60vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: hsla(0, 1%, 30%, 0.897);
+  transform: translate(-50%,-50%); /* Fix the vertical translation */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Corrected shadow syntax */
+  
+  /* Use a different strategy for the animation */
+  animation-name: slideInFromTopFixed;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  display: flex;
+  text-align: center; 
+  font-style: Italic, bold;
+  color: #F8F9FA;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 4vw;
+  justify-content: center;
+  align-items: center;
+
+} 
